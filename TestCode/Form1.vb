@@ -67,6 +67,6 @@ Public Class Form1
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
         Label4.Text = ("server =KANISORN;initial catalog=test_three;user id=sa;pwd=id523407;")
         conn = Label4.Text
-        ''พลุ
+        ''พลุhujhjhjhj
     End Sub
 End Class

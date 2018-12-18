@@ -6,13 +6,18 @@ Public Class Form1
     Friend ds As New DataSet
     Friend sql As String
     Friend mm As SqlCommand
+    Friend server As String = "server =KANISORN;initial catalog=test_three;user id=sa;pwd=id523407;"
+
     Friend Sub connect()
         If conn.State = ConnectionState.Closed Then conn.Open()
 
     End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        conn()
         connect()
         Timer1.Start()
+        Label5.Text = "0"
+        Label4.Text = server
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -35,38 +40,16 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Hide()
-        'SO.Show()
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Me.Hide()
-        'PO.Show()
-    End Sub
-
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        Me.Hide()
-        'DO_Form.Show()
-    End Sub
-
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Me.Hide()
-        'GPN_Form.Show()
-    End Sub
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Dim num As New Random
         Label6.Text = num.Next(1000, 9999)
     End Sub
 
     Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
-        Label5.Text = ("0")
+
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
-        Label4.Text = ("server =KANISORN;initial catalog=test_three;user id=sa;pwd=id523407;")
-        conn = Label4.Text
-        ''พลุhujhjhjhj
+
     End Sub
 End Class

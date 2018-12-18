@@ -1,0 +1,4 @@
+C:\Users\Acer_Laptop\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Acer_Laptop\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Release\TestCode.Form1.resources
+C:\Users\Acer_Laptop\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Release\TestCode.Resources.resources
+C:\Users\Acer_Laptop\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Release\TestCode.vbproj.GenerateResource.Cache

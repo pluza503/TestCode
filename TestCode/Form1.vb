@@ -15,10 +15,10 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim day1 As Integer = DateTime.Now.Minute.ToString
-        Dim day2 As Integer = DateTime.Now.Millisecond.ToString
+        
+        Dim day1 As String = DateTime.Now.ToString("yyfff")
         MsgBox(day1)
-        Label6.Text = day1 & day2
+        Label6.Text = day1
 
         connect()
 

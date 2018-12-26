@@ -17,7 +17,7 @@ Public Class Form1
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         
         Dim day1 As String = DateTime.Now.ToString("yyfff")
-        MsgBox(day1)
+        'MsgBox(day1)
         Label6.Text = day1
 
         connect()
@@ -46,13 +46,22 @@ Public Class Form1
             MsgBox("Fail")
 
         End If
-        Dim tmpPathFiles$ = Application.StartupPath
-        Dim filePath() As String = Directory.GetDirectories(tmpPathFiles & "\DatabaseUpdate")
-        For a As Integer = 0 To filePath.Length - 1
-
-            Dim tmpPathFile$ = Application.StartupPath
-            Dim files() As String = Directory.GetFiles(filePath(a), "*.sql")
-        Next
+        
     End Sub
 
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+
+    End Sub
 End Class

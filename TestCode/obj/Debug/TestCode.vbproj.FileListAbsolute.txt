@@ -21,3 +21,10 @@ C:\Users\Acer_Laptop\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj
 C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\TestCode.exe
 C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\TestCode.xml
 C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\TestCode.pdb
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\bin\Debug\TestCode.exe
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\bin\Debug\TestCode.pdb
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\bin\Debug\TestCode.xml
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\TestCode.Form1.resources
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\TestCode.Resources.resources
+C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\obj\Debug\TestCode.vbproj.GenerateResource.Cache

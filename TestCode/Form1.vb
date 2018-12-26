@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.IO
 Public Class Form1
-    Friend server As String = "server =KANISORN;initial catalog=test_three;user id=sa;pwd=id523407;"
+    Friend server As String = "server =DESKTOP-FCIBGIP;initial catalog=test_three;user id=sa;pwd=k0811883329;"
     Friend conn As New SqlConnection(server)
     Friend da As New SqlDataAdapter
     Friend ds As New DataSet
@@ -55,4 +55,29 @@ Public Class Form1
         Next
     End Sub
 
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Dim tmpPathFile2$ = Application.StartupPath
+        Dim files2() As String = Directory.GetDirectories(tmpPathFile2 & "\Button")
+        Dim tmpPathFile$ = Application.StartupPath
+        'MsgBox(files2(1))
+        Dim files() As String = Directory.GetFiles(files2(1), "*.exe")
+        Dim FILE_NAME As String = files(0)
+        'Dim FILE_NAME As String = "C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\bin\Debug\Button\SO\klanaja.exe"
+        Process.Start(FILE_NAME)
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim tmpPathFile2$ = Application.StartupPath
+        Dim files2() As String = Directory.GetDirectories(tmpPathFile2 & "\Button")
+        Dim tmpPathFile$ = Application.StartupPath
+        'MsgBox(files2(0))
+        Dim files() As String = Directory.GetFiles(files2(0), "*.exe")
+        Dim FILE_NAME As String = files(0)
+        'Dim FILE_NAME As String = "C:\Users\FaiFooNa\Documents\Visual Studio 2008\Projects\TestCode\TestCode\bin\Debug\Button\SO\klanaja.exe"
+        Process.Start(FILE_NAME)
+    End Sub
 End Class

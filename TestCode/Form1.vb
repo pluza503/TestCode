@@ -2,12 +2,15 @@
 Imports System.Data
 Imports System.IO
 Public Class Form1
-    Friend server As String = "server =Kanisorn;initial catalog=test_three;user id=sa;pwd=id523407;"
+    'Friend server As String = "server =Kanisorn;initial catalog=test_three;user id=sa;pwd=id523407;"
+    Friend server As String = "server =DESKTOP-FCIBGIP;initial catalog=test_three;user id=sa;pwd=k0811883329;"
     Friend conn As New SqlConnection(server)
     Friend da As New SqlDataAdapter
     Friend ds As New DataSet
     Friend sql As String
     Friend mm As SqlCommand
+    Friend day1 As String = DateTime.Now.ToString("yyfff")
+    Friend count As String = "0"
 
     Friend Sub connect()
         If conn.State = ConnectionState.Closed Then conn.Open()
@@ -16,13 +19,14 @@ Public Class Form1
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         
-        Dim day1 As String = DateTime.Now.ToString("yyfff")
+
 
         Label6.Text = day1
 
         connect()
 
         Label4.Text = server
+        Label5.Text = 0
 
     End Sub
 
@@ -57,7 +61,15 @@ Public Class Form1
         Dim files() As String = Directory.GetFiles(files2(0), "*.exe")
         Dim FILE_NAME As String = files(0)
 
-        Process.Start(FILE_NAME)
+        'Process.Start(FILE_NAME)
+
+        Dim p As New Process
+        Dim ss As String = server + "/" + count + "/" + day1 + "/" + "DO"
+        'MsgBox(ss)
+        p.StartInfo.Arguments = ss
+        p.StartInfo.FileName = Application.StartupPath & "\Button\HEAD\BCI-test.exe"
+        p.Start()
+        'Me.Hide()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
@@ -65,10 +77,16 @@ Public Class Form1
         Dim files2() As String = Directory.GetDirectories(tmpPathFile2 & "\Button")
         Dim tmpPathFile$ = Application.StartupPath
 
-        Dim files() As String = Directory.GetFiles(files2(1), "*.exe")
+        Dim files() As String = Directory.GetFiles(files2(0), "*.exe")
         Dim FILE_NAME As String = files(0)
 
-        Process.Start(FILE_NAME)
+        'Process.Start(FILE_NAME)
+        Dim p As New Process
+        Dim ss As String = server + "/" + count + "/" + day1 + "/" + "GRN"
+        'MsgBox(ss)
+        p.StartInfo.Arguments = ss
+        p.StartInfo.FileName = Application.StartupPath & "\Button\HEAD\BCI-test.exe"
+        p.Start()
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -76,10 +94,17 @@ Public Class Form1
         Dim files2() As String = Directory.GetDirectories(tmpPathFile2 & "\Button")
         Dim tmpPathFile$ = Application.StartupPath
 
-        Dim files() As String = Directory.GetFiles(files2(2), "*.exe")
+        Dim files() As String = Directory.GetFiles(files2(0), "*.exe")
         Dim FILE_NAME As String = files(0)
 
-        Process.Start(FILE_NAME)
+        'Process.Start(FILE_NAME)
+        Dim p As New Process
+        Dim ss As String = server + "/" + count + "/" + day1 + "/" + "PO"
+        'Dim ss As String = "12/14/16/17"
+        'MsgBox(ss)
+        p.StartInfo.Arguments = ss
+        p.StartInfo.FileName = Application.StartupPath & "\Button\HEAD\BCI-test.exe"
+        p.Start()
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
@@ -87,9 +112,15 @@ Public Class Form1
         Dim files2() As String = Directory.GetDirectories(tmpPathFile2 & "\Button")
         Dim tmpPathFile$ = Application.StartupPath
 
-        Dim files() As String = Directory.GetFiles(files2(3), "*.exe")
+        Dim files() As String = Directory.GetFiles(files2(0), "*.exe")
         Dim FILE_NAME As String = files(0)
 
-        Process.Start(FILE_NAME)
+        'Process.Start(FILE_NAME)
+        Dim p As New Process
+        Dim ss As String = server + "/" + count + "/" + day1 + "/" + "SO"
+        'MsgBox(ss)
+        p.StartInfo.Arguments = ss
+        p.StartInfo.FileName = Application.StartupPath & "\Button\HEAD\BCI-test.exe"
+        p.Start()
     End Sub
 End Class
